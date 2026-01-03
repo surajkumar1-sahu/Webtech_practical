@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Condition & Loop</title>
+</head>
+<body>
+
+    <h2>JavaScript Conditional Statements & Loops</h2>
+
+    <script>
+        let num = 5;
+
+        // IF statement
+        if (num > 0) {
+            document.write("Number is positive<br>");
+        }
+
+        // IF-ELSE statement
+        if (num % 2 === 0) {
+            document.write("Number is even<br>");
+        } else {
+            document.write("Number is odd<br>");
+        }
+
+        // ELSE-IF ladder
+        let marks = 75;
+
+        if (marks >= 90) {
+            document.write("Grade: A<br>");
+        } else if (marks >= 75) {
+            document.write("Grade: B<br>");
+        } else if (marks >= 50) {
+            document.write("Grade: C<br>");
+        } else {
+            document.write("Grade: Fail<br>");
+        }
+
+        document.write("<br>");
+
+        // FOR loop
+        document.write("For Loop:<br>");
+        for (let i = 1; i <= 5; i++) {
+            document.write(i + "<br>");
+        }
+
+        document.write("<br>");
+
+        // WHILE loop
+        document.write("While Loop:<br>");
+        let j = 1;
+        while (j <= 5) {
+            document.write(j + "<br>");
+            j++;
+        }
+
+        document.write("<br>");
+
+        // DO-WHILE loop
+        document.write("Do-While Loop:<br>");
+        let k = 1;
+        do {
+            document.write(k + "<br>");
+            k++;
+        } while (k <= 5);
+    </script>
+
+</body>
+</html>

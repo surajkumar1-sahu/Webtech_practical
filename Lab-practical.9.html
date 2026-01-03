@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    <style>
+        /* Mobile-first default styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            text-align: center;
+            padding: 0.8rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        article {
+            margin-bottom: 1rem;
+        }
+
+        aside {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Media Queries for larger screens */
+        @media (min-width: 768px) {
+            main {
+                display: flex;
+                gap: 2%;
+            }
+
+            article {
+                flex: 3;
+            }
+
+            aside {
+                flex: 1;
+                margin-bottom: 0;
+            }
+
+            nav ul {
+                display: flex;
+            }
+
+            nav ul li {
+                flex: 1;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Responsive Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Article Section</h2>
+            <p>This is the main content of the website. It uses flexible units like <b>rem</b> and <b>%</b> to adapt to different screen sizes.</p>
+        </article>
+
+        <aside>
+            <h3>Sidebar</h3>
+            <p>This sidebar will move next to the main content on larger screens using media queries.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Responsive Website</p>
+    </footer>
+
+</body>
+</html>

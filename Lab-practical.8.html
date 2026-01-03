@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Demo</title>
+
+    <style>
+        /* 1. Universal Selector (*) */
+        * {
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* 2. Class Selector (.highlight) */
+        .highlight {
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        /* 3. ID Selector (#main-title) */
+        #main-title {
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+
+        /* 4. Descendant Selector (div p) */
+        div p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 5. Group Selector (h2, h3) */
+        h2, h3 {
+            color: green;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-title">CSS Selectors Example</h1>
+
+    <!-- Using Class Selector -->
+    <p class="highlight">This paragraph is styled using a class selector (.highlight).</p>
+
+    <!-- Using Descendant Selector -->
+    <div>
+        <p>This paragraph is inside a div and styled using a descendant selector (div p).</p>
+    </div>
+
+    <!-- Using Group Selector -->
+    <h2>Group Selector Example (h2, h3)</h2>
+    <h3>Another heading styled using the group selector</h3>
+
+    <!-- Universal Selector (*) applied to all elements (font and box-sizing) -->
+
+</body>
+</html>

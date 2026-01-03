@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Child Nodes</title>
+</head>
+<body>
+
+    <h2>DOM Manipulation Example</h2>
+
+    <button onclick="addItem()">Add Item</button>
+    <button onclick="modifyItem()">Modify First Item</button>
+    <button onclick="removeItem()">Remove Last Item</button>
+
+    <ul id="list"></ul>
+
+    <script>
+        // CREATE + APPEND
+        function addItem() {
+            let li = document.createElement("li");   // create element
+            li.innerHTML = "New List Item";
+            document.getElementById("list").appendChild(li); // append child
+        }
+
+        // MODIFY CHILD NODE
+        function modifyItem() {
+            let list = document.getElementById("list");
+            if (list.firstChild) {
+                list.firstChild.innerHTML = "Modified Item";
+            }
+        }
+
+        // REMOVE CHILD NODE
+        function removeItem() {
+            let list = document.getElementById("list");
+            if (list.lastChild) {
+                list.removeChild(list.lastChild);
+            }
+        }
+    </script>
+
+</body>
+</html>

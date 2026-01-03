@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation</title>
+</head>
+<body>
+
+    <h2 id="title">Welcome</h2>
+    <p class="msg">This is a paragraph</p>
+
+    <button onclick="changeContent()">Click Me</button>
+
+    <script>
+        function changeContent() {
+            // using getElementById()
+            document.getElementById("title").innerHTML = "DOM Manipulation Example";
+
+            // using querySelector()
+            document.querySelector(".msg").innerHTML = "Text changed using querySelector()";
+        }
+    </script>
+
+</body>
+</html>

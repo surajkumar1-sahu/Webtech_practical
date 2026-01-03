@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Demo</title>
+
+    <style>
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://via.placeholder.com/1200x800') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Container demonstrating box model */
+        .container {
+            width: 80%;
+            margin: 30px auto; /* margin outside box */
+            padding: 20px;      /* padding inside box */
+            border: 3px solid #333; /* border around box */
+            background-color: rgba(255, 255, 255, 0.8); /* semi-transparent background */
+            box-sizing: border-box; /* includes padding and border in width */
+        }
+
+        /* Heading styling */
+        h1 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 20px;
+        }
+
+        /* Paragraph styling */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Box with background color and padding */
+        .highlight-box {
+            background-color: #ffeb3b;
+            padding: 15px;
+            border: 2px dashed #f44336;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Advanced CSS Styling</h1>
+
+        <p>This container demonstrates the <b>CSS box model</b>, including <b>margin</b>, <b>padding</b>, and <b>border</b>. Notice how the container sits in the center of the page with space around it.</p>
+
+        <p>The background of the page uses a <b>background image</b> with cover and center properties to fill the screen nicely.</p>
+
+        <div class="highlight-box">
+            <p>This is a highlighted box with padding inside and a dashed border around it. You can adjust margins, padding, and borders to see the box model in action.</p>
+        </div>
+    </div>
+
+</body>
+</html>

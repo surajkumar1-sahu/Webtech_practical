@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Arithmetic Operations</title>
+</head>
+<body>
+
+    <h2>Basic Arithmetic Calculator</h2>
+
+    <form>
+        <label>Enter First Number:</label><br>
+        <input type="number" id="num1"><br><br>
+
+        <label>Enter Second Number:</label><br>
+        <input type="number" id="num2"><br><br>
+
+        <input type="button" value="Add" onclick="add()">
+        <input type="button" value="Subtract" onclick="subtract()">
+        <input type="button" value="Multiply" onclick="multiply()">
+        <input type="button" value="Divide" onclick="divide()">
+    </form>
+
+    <h3 id="result">Result: </h3>
+
+    <script>
+        function add() {
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML = "Result: " + (a + b);
+        }
+
+        function subtract() {
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML = "Result: " + (a - b);
+        }
+
+        function multiply() {
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML = "Result: " + (a * b);
+        }
+
+        function divide() {
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+
+            if (b === 0) {
+                document.getElementById("result").innerHTML = "Result: Cannot divide by zero";
+            } else {
+                document.getElementById("result").innerHTML = "Result: " + (a / b);
+            }
+        }
+    </script>
+
+</body>
+</html>

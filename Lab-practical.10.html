@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div and Span Layout</title>
+    <style>
+        /* Styling the container */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Header */
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        /* Navigation bar */
+        .nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .nav span {
+            color: white;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        /* Content and sidebar layout */
+        .content {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .main {
+            flex: 3;
+            padding: 10px;
+            background-color: #e3f2fd;
+            margin-right: 10px;
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 10px;
+            background-color: #ffebee;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Styling inline span inside content */
+        .main span.highlight {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            My Website Header
+        </div>
+
+        <div class="nav">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </div>
+
+        <div class="content">
+            <div class="main">
+                <h2>Main Content</h2>
+                <p>This is the main content area. You can highlight text using a <span class="highlight">span element</span> inside a paragraph.</p>
+            </div>
+
+            <div class="sidebar">
+                <h3>Sidebar</h3>
+                <p>This is the sidebar area. It sits next to the main content using CSS flexbox.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2025 My Website.
+         </div>
+    </div>
+
+</body>
+</html>

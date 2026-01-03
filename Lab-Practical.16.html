@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show & Hide Example</title>
+
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        .highlight {
+            background-color: orange;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="toggleBox()">Show / Hide Box</button>
+    <button onclick="toggleStyle()">Toggle Style</button>
+
+    <div id="myBox" class="box">
+        Hello, I am a box!
+    </div>
+
+    <script>
+        function toggleBox() {
+            let box = document.getElementById("myBox");
+
+            if (box.style.display === "none") {
+                box.style.display = "block";
+            } else {
+                box.style.display = "none";
+            }
+        }
+
+        function toggleStyle() {
+            let box = document.getElementById("myBox");
+            box.classList.toggle("highlight");
+        }
+    </script>
+
+</body>
+</html>

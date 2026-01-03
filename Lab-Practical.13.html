@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function and Scope Demo</title>
+</head>
+<body>
+
+<h2>User-Defined Function and Scope</h2>
+<p id="output"></p>
+
+<script>
+    // Global scope
+    var x = 10;
+    let y = 20;
+    const z = 30;
+
+    function scopeDemo() {
+        // Function scope
+        var a = 100;
+
+        if (true) {
+            // Block scope
+            var b = 200;     // var is NOT block scoped
+            let c = 300;     // let is block scoped
+            const d = 400;   // const is block scoped
+
+            document.getElementById("output").innerHTML +=
+                "Inside block:<br>" +
+                "a = " + a + "<br>" +
+                "b = " + b + "<br>" +
+                "c = " + c + "<br>" +
+                "d = " + d + "<br><br>";
+        }
+
+        document.getElementById("output").innerHTML +=
+            "Inside function (outside block):<br>" +
+            "a = " + a + "<br>" +
+            "b = " + b + "<br><br>";
+
+        // c and d are NOT accessible here (block scoped)
+    }
+
+    // Invoking user-defined function
+    scopeDemo();
+
+    document.getElementById("output").innerHTML +=
+        "Global scope:<br>" +
+        "x = " + x + "<br>" +
+        "y = " + y + "<br>" +
+        "z = " + z + "<br>";
+</script>
+
+</body>
+</html>
